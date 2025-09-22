@@ -1,6 +1,7 @@
 .background-img{
     opacity: 50%;
     object-fit: cover;
+    position: absolute;
 }
 
 .fulfil{
