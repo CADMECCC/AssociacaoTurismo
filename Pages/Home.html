@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caminhos da Serra</title>
+  <link rel="stylesheet" href="../styles/Home.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../Scripts/Home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Caminhos da Serra</h1>
+    <nav class="navbar">
+      <a href="#">Início</a>
+      <a href="#">Trilhas</a>
+      <a href="#">Desafios Locais</a>
+      <a href="#">Proteger & Cuidar</a>
+      <a href="#">Parceiros</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Fechar menu">☰</button>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Trilhas</a></li>
+      <li><a href="#">Desafios Locais</a></li>
+      <li><a href="#">Proteger & Cuidar</a></li>
+      <li><a href="#">Parceiros</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Conheça a Região</h2>
+        <p>Descubra as belezas naturais, a cultura e as trilhas ecológicas que conectam os cinco municípios.</p>
+        <button>Explorar</button>
+      </div>
+    </section>
+
+    <section class="municipios">
+      <h2>Os municípios</h2>
+      <div class="cards-container">
+        <article class="city-card">
+          <img src="forest.jpg" alt="Cuité">
+          <h3>Cuité</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </article>
+        <article class="city-card">
+          <img src="forest.jpg" alt="Jaçanã">
+          <h3>Jaçanã</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </article>
+        <article class="city-card">
+          <img src="forest.jpg" alt="Nova Floresta">
+          <h3>Nova Floresta</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </article>
+        <article class="city-card">
+          <img src="forest.jpg" alt="Picuí">
+          <h3>Picuí</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </article>
+        <article class="city-card">
+          <img src="forest.jpg" alt="Coronel Ezequiel">
+          <h3>Coronel Ezequiel</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </article>
+      </div>
+    </section>
+
+    <div id="cityModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modalTitle">Cidade</h3>
+        <p id="modalText">Resumo breve sobre a cidade.</p>
+        <a id="modalLink" href="#" target="_blank" class="modal-button">Saiba mais</a>
+      </div>
+    </div>
+
+    <section class="main-content">
+      <aside class="nature-section">
+        <h2>A natureza</h2>
+        <div class="nature-items">
+          <div class="nature-card" data-info="relevo">
+            <img class="icon" src="878516.png" alt="Relevo">
+            <h3>Relevo</h3>
+          </div>
+          <div class="nature-card" data-info="clima">
+            <img class="icon" src="878516.png" alt="Clima">
+            <h3>Clima</h3>
+          </div>
+          <div class="nature-card" data-info="fauna">
+            <img class="icon" src="878516.png" alt="Fauna">
+            <h3>Fauna</h3>
+          </div>
+          <div class="nature-card" data-info="flora">
+            <img class="icon" src="878516.png" alt="Flora">
+            <h3>Flora</h3>
+          </div>
+        </div>
+        <div id="natureInfo" class="nature-info">
+          <p>Clique em um dos ícones acima para conhecer mais sobre os aspectos naturais da região.</p>
+        </div>
+      </aside>
+
+      <section class="map-section">
+        <h2>A região</h2>
+        <div id="map"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Caminhos da Serra. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
 
