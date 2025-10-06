@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/Style.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/Home.css">
     <title>Trilhas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/Scripts/Home.js" defer></script>
 </head>
-<body style="margin: 0px;">
+<body>
+    <header>
+    <h1>Caminhos da Serra</h1>
+    <nav class="navbar">
+      <a href="#">Início</a>
+      <a href="Trilhas.html">Trilhas</a>
+      <a href="#">Desafios Locais</a>
+      <a href="#">Proteger & Cuidar</a>
+      <a href="#">Parceiros</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+  </header>
+
     <header class="banner">
         <img src="/img/Ararunas.jpeg" class="background-img fulfil" alt="Imagem da trilha de Araruna.">  
             <h1 class="titulo">Caminhos das Ararunas</h1>   
     </header>
+    <aside class="sidebar" id="sidebar">
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Fechar menu">☰</button>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Trilhas</a></li>
+      <li><a href="#">Desafios Locais</a></li>
+      <li><a href="#">Proteger & Cuidar</a></li>
+      <li><a href="#">Parceiros</a></li>
+    </ul>
+  </aside>
     
   <main class="conteudo">
     <h2>Descrição:</h2>

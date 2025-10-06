@@ -1,8 +1,3 @@
-.background-img{
-    opacity: 50%;
-    object-fit: cover;
-    position: absolute;
-}
 
 .fulfil{
     height: 100vh;
@@ -11,12 +6,19 @@
 
 .background-img{
     opacity: 65%;  /* trocar a imagem de fundo */
+    opacity: 0.65;
     object-fit: cover;
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+      width: 100%;
+  height: 100%;
+      display: block;
 }
 
 .fulfil{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;   
@@ -24,8 +26,9 @@
 }
 
 .titulo {
-    position: absolute;
-    color: #ffe082;
+    position: relative;
+    color: white;
+    z-index: 1;
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
@@ -34,11 +37,13 @@
 
 .banner {
     height: 100vh; 
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+     margin-top: 69px; 
+       overflow: hidden;
 }
 
 .conteudo {
