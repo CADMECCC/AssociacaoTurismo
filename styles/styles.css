@@ -47,3 +47,91 @@
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
+.ararunas{
+  background-image: url(/img/Araruna-img.jpg);
+}
+
+.ararunas h1{
+    font-size: 2.7rem;
+    color: #2e7d32;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.trilha{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: wrap;
+    text-align: justify;
+    text-align-last: left;
+    text-indent: 20px;
+    padding: 0 3rem;
+}
+
+.trilha h2{
+    font-size: 15px;
+    font-weight: bold;
+    width: auto;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.trilha h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    box-shadow: inset 0 -1px 0 #ddd;
+    width: auto;
+    text-indent: 5px;
+    display: inline-block
+}
+
+.trilha h1::after{
+    background: #2e7d32;
+    clear: both;
+    display: block;
+    float: left;
+    content: "";
+    position: relative;
+    height: 2px;
+    width: 70%;
+    margin: 0 30% 0 0;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.trilha p{
+    margin: 10px 0;
+}
+
+.trilha a{
+    color: #000000;
+    margin: 10px 0;
+}
+
+.trilha ul{
+    margin-left:50px;
+    text-indent: 0;
+}
+
+.metade{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+    margin-top: 0;
+    text-indent: 0;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.linha{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
