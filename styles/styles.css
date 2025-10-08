@@ -54,7 +54,7 @@
 
 .ararunas h1{
     font-size: 2.7rem;
-    color: #fff600;
+    color: #2e7d32;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -102,7 +102,12 @@
 }
 
 .trilha p{
-    margin: 10px 0
+    margin: 10px 0;
+}
+
+.trilha a{
+    color: #000000;
+    margin: 10px 0;
 }
 
 .trilha ul{
