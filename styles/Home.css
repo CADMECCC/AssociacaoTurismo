@@ -10,6 +10,7 @@ body {
   background-color: #fafafa;
   color: #222;
   line-height: 1.5;
+  height: 100vh;
 }
 
 header {
@@ -81,12 +82,12 @@ nav a:hover { opacity: 0.8; }
 
 main {
   margin-top: 90px;
-  padding: 2rem 1rem;
+  padding: 1rem;
+  min-height: 100%;
 }
 
 .hero {
   position: relative;
-  background-image: url(forest.jpg);
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -97,6 +98,10 @@ main {
   text-align: center;
   border-radius: 12px;
   overflow: hidden;
+}
+
+.forest{
+  background-image: url(forest.jpg);
 }
 
 .hero::before {
@@ -287,6 +292,7 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  margin-bottom: 0
 }
 
 @media (max-width: 900px) {
