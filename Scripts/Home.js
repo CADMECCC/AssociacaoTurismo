@@ -68,22 +68,21 @@ function setupNatureIcons() {
 }
 
 function initializeMap() {
-  const map = L.map("map").setView([-6.7, -35.7], 9); 
+  const map = L.map("map").setView([-6.48, -36.25], 10);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
   const municipalities = [
-    { name: "Cuité", coords: [-6.58, -35.48] },
-    { name: "Jaçanã", coords: [-6.80, -35.60] },
-    { name: "Nova Floresta", coords: [-6.80, -35.70] },
-    { name: "Picuí", coords: [-6.90, -35.70] },
-    { name: "Coronel Ezequiel", coords: [-6.78, -35.58] }
+    { name: "Cuité", coords: [-6.48500, -36.15694] },
+    { name: "Jaçanã", coords: [-6.41856, -36.20310] },
+    { name: "Nova Floresta", coords: [-6.45500, -36.20278] },
+    { name: "Picuí", coords: [-6.51056, -36.34694] },
+    { name: "Coronel Ezequiel", coords: [-6.38306, -36.21250] }
   ];
 
   municipalities.forEach(city => {
-    L.marker(city.coords).addTo(map)
-      .bindPopup(`<b>${city.name}</b>`);
+    L.marker(city.coords).addTo(map).bindPopup(`<strong>${city.name}</strong>`);
   });
 }
