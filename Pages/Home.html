@@ -6,6 +6,7 @@
   <title>Caminhos da Serra</title>
   <link rel="stylesheet" href="../styles/Home.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="../Scripts/Home.js" defer></script>
 </head>
@@ -116,9 +117,117 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Caminhos da Serra. Todos os direitos reservados.</p>
+  <lov-write> <parameter name="file_path"></parameter> <parameter name="content"><!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Footer - Caminhos da Serra</title> <script src="https://cdn.tailwindcss.com"></script> <style> :root { --primary: 150 45% 35%; --primary-foreground: 0 0% 98%; }
+      .bg-primary {
+          background-color: #2e7d32;
+      }
+      
+      .text-primary-foreground {
+          color: hsl(var(--primary-foreground));
+      }
+      
+      .text-primary-foreground\/80 {
+          color: hsl(var(--primary-foreground) / 0.8);
+      }
+      
+      .text-primary-foreground\/60 {
+          color: hsl(var(--primary-foreground) / 0.6);
+      }
+      
+      .border-primary-foreground\/20 {
+          border-color: hsl(var(--primary-foreground) / 0.2);
+      }
+      
+      .hover\:text-primary-foreground:hover {
+          color: hsl(var(--primary-foreground));
+      }
+  </style>
+  </head> <body class="bg-gray-100">
+  <!-- Footer -->
+  <footer class="bg-primary text-primary-foreground py-12">
+      <div class="container mx-auto px-4">
+          <div class="grid md:grid-cols-4 gap-8 mb-8">
+              <!-- Logo and Description -->
+              <div class="md:col-span-2">
+                  <div class="flex items-center gap-2 mb-4">
+                      <!-- Mountain Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                      </svg>
+                      <span class="text-xl font-bold">Caminhos da Serra</span>
+                  </div>
+                  <p class="text-primary-foreground/80 mb-4">
+                      Portal integrado de turismo sustentável e educação ambiental da região do Curimataú e Seridó paraibano e Borborema Potiguar.
+                  </p>
+                  <div class="flex items-center gap-2 text-sm text-primary-foreground/80">
+                      <!-- MapPin Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                          <circle cx="12" cy="10" r="3"/>
+                      </svg>
+                      <span>Cuité, Paraíba - Brasil</span>
+                  </div>
+              </div>
+
+              <!-- Quick Links -->
+              <div>
+                  <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
+                  <ul class="space-y-2">
+                      <li>
+                          <a href="/" class="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                              Início
+                          </a>
+                      </li>
+                      <li>
+                          <a href="/trilhas" class="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                              Trilhas
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#municipios" class="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                              Municípios
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#ods" class="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                              Educação Ambiental
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+
+              <!-- Contact -->
+              <div>
+                  <h3 class="font-bold text-lg mb-4">Contato</h3>
+                  <div class="space-y-3">
+                      <div class="flex items-center gap-2 text-sm text-primary-foreground/80">
+                          <!-- Mail Icon -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <rect width="20" height="16" x="2" y="4" rx="2"/>
+                              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                          </svg>
+                          <span>contato@caminhodaserra.org.br</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
+              <p>
+                  © <span id="year"></span> Caminhos da Serra. Desenvolvido em parceria com Associação Turística de Cuité e IFPB.
+              </p>
+              <p class="mt-2">
+                  Todos os direitos reservados. Fotos meramente ilustrativas.
+              </p>
+          </div>
+      </div>
   </footer>
+
+  <script>
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  </body> </html></parameter> </invoke>
 </body>
 </html>
 
