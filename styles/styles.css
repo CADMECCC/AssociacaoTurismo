@@ -173,7 +173,7 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 15px;
-  background: url(/img/Ararunas.jpeg) center/cover no-repeat;
+  background: center/cover no-repeat;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   break-inside: avoid;
@@ -219,6 +219,7 @@
   text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
 }
 
+<<<<<<< HEAD
 @media (max-width: 600px) {
   .galeria{
       column-count: 1;
@@ -228,4 +229,68 @@
 footer{
   text-indent: 0;
   text-align: left;
+=======
+.galeria-item.ararunas {
+  background-image: url('/img/Ararunas.jpeg');
+}
+
+.galeria-item.olho.negro {
+  background-image: url('/img/TrilhadoOlhoDáguadoNegro.jpg');
+}
+
+.galeria-item.coyte {
+  background-image: url('/img/coyte.jpg');
+}
+
+.galeria-item.farinha {
+  background-image: url('/img/farinha.jpg');
+}
+
+.galeria-item.bar {
+  background-image: url('/img/bar.jpg');
+}
+
+.galeria-item.pico {
+  background-image: url('/img/pico2.jpg');
+}
+
+.galeria-item.fe {
+  background-image: url('/img/fe.jpg');
+}
+
+.galeria-item.batentes {
+  background-image: url('/img/batentes.jpg');
+}
+
+.galeria-item.mamanguapes {
+  background-image: url('/img/Mamanguape.jpg');
+}
+
+.galeria-item.quipauá {
+  background-image: url('/img/quipaua.jpg');
+}
+
+.galeria-item.vale {
+  background-image: url('/img/vale.jpg');
+}
+
+.galeria-item.eremita {
+  background-image: url('/img/tro.png');
+}
+
+.galeria-item.casa {
+  background-image: url('/img/bonita.jpg');
+}
+
+.galeria-item.santaluzia {
+  background-image: url('/img/novaflo.jpg');
+}
+
+.galeria-item.agrovila {
+  background-image: url('/img/Novaflo.png');
+}
+
+.galeria-item.norte {
+  background-image: url('/img/norte.jpg');
+>>>>>>> 82c0c76 (Mudanças de hoje)
 }
