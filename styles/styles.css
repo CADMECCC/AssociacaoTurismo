@@ -218,18 +218,19 @@
   transform: translateY(-5px) scale(1.08);
   text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
 }
-
-<<<<<<< HEAD
+/* Responsividade */
 @media (max-width: 600px) {
-  .galeria{
+  .galeria {
       column-count: 1;
   }
 }
 
-footer{
+footer {
   text-indent: 0;
   text-align: left;
-=======
+}
+
+/* Imagens das trilhas */
 .galeria-item.ararunas {
   background-image: url('/img/Ararunas.jpeg');
 }
@@ -292,5 +293,4 @@ footer{
 
 .galeria-item.norte {
   background-image: url('/img/norte.jpg');
->>>>>>> 82c0c76 (Mudanças de hoje)
 }
